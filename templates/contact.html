@@ -1,0 +1,121 @@
+	{% extends 'Universal_index.html' %}
+	{% load static %}
+{% block content %}
+
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url(images/background/5.jpg)">
+    	<div class="auto-container">
+        	<h2>Contact Us</h2>
+            <ul class="page-breadcrumb">
+            	<li><a href="{% url 'index_2' %}">home</a></li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+    </section>
+    <!--End Page Title-->
+	
+	<!-- Contact Form Section -->
+	<section class="contact-form-section" style="background-image:url(images/background/contact.png)">
+		<div class="auto-container">
+			<!-- Sec Title -->
+			<div class="sec-title">
+				<h2>Get In Touch</h2>
+				<div class="text">Do you have anything in your mind to let us know?  Kindly don't delay to connect to us by means of our contact form.</div>
+			</div>
+			
+			<div class="row clearfix">
+				
+				<!-- Form Column -->
+				<div class="form-column col-lg-7 col-md-12 col-sm-12">
+					<div class="inner-column">
+						
+						<!-- Contact Form -->
+						<div class="contact-form">
+								
+							<!--Contact Form-->
+							
+								<div class="row clearfix">
+									<div class="form-group col-lg-6 col-md-6 col-sm-12">
+										<input type="text" name="username" placeholder="Your name" required>
+									</div>
+									
+									<div class="form-group col-lg-6 col-md-6 col-sm-12">
+										<input type="text" name="email" placeholder="Email address" required>
+									</div>
+									
+									<div class="form-group col-lg-12 col-md-12 col-sm-12">
+										<input type="text" name="subject" placeholder="Subject" required>
+									</div>
+									
+									<div class="form-group col-lg-12 col-md-12 col-sm-12">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+									<div class="s1-cta"><span class="form-group col-lg-12 col-md-12 col-sm-12"><input type="file" name="file-468" size="40" class="wpcf7-form-control wpcf7-file" accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx,.odt,.avi,.ogg,.m4a,.mov,.mp3,.mp4,.mpg,.wav,.wmv" aria-invalid="false" /></span>
+									</div>
+									
+									<div class="form-group col-lg-12 col-md-12 col-sm-12">
+										<button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="txt">Submit</span></button>
+									</div>
+								</div>
+							
+						</div>
+						
+					</div>
+				</div>
+				
+				<!-- Info Column -->
+				<div class="info-column col-lg-5 col-md-12 col-sm-12">
+					<div class="inner-column">
+						
+						<!-- Contact Info List -->
+						<ul class="contact-info-list">
+							<li><strong>Address :</strong><br>256, Stella Orr'e,, New York 24</li>
+						</ul>
+						<!-- Contact Info List -->
+						<ul class="contact-info-list">
+							<li><strong>Phone : </strong><a href="tel:+91 7899999578">+91 7899999578</a></li>
+							<li><strong>Email : </strong><a href="mailto:info@stellaorre.com">info@stellaorre.com</a></li>
+						</ul>
+						 
+
+       
+                       <footer class="main-footer">
+                            <!--Footer Column-->
+                            <div class="footer-column col-lg-7 col-md-8 cl-sm-12">
+                                <div class="footer-widget logo-widget">
+                                    
+                                    <ul class="social-icons">
+                                        <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                                        <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                                        <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                                        <li><a href="#"><span class="fab fa-google-plus-g"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!--Footer Column-->
+                           
+                        <footer>
+	</section>
+	<!-- End Contact Form Section -->
+	
+	<!-- Map Section -->
+    <section class="map-section">
+        <div class="outer-container">
+            <div class="map-outer">
+                <div class="map-canvas"
+                    data-zoom="12"
+                    data-lat="-37.817085"
+                    data-lng="144.955631"
+                    data-type="roadmap"
+                    data-hue="#ffc400"
+                    data-title="Melbourne Australia"
+                    data-icon-path="images/icons/map-marker.png"
+                    data-content="(1800) 456 7890 <br> Mon-Sat: 7.00an - 9.00pm">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Map Section -->
+	
+    {% endblock %}
