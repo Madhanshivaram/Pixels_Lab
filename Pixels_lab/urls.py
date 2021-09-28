@@ -16,7 +16,7 @@ urlpatterns = [
 	path('index_4/', TemplateView.as_view(template_name="index-4.html" ), name="index_4"),
 	path('index_5/', TemplateView.as_view(template_name="index-5.html" ), name="index_5"),
 	path('index_6/', TemplateView.as_view(template_name="index-6.html" ), name="index_6"),
-	path('index/', TemplateView.as_view(template_name="index.html" ), name="index"),
+	path('', TemplateView.as_view(template_name="index.html" ), name="index"),
 	path('modern_furniture/', TemplateView.as_view(template_name="modern-furniture.html" ), name="modern_furniture"),
 	path('modular_kitchen/', TemplateView.as_view(template_name="modular-kitchen.html" ), name="modular_kitchen"),
 	path('office_interior/', TemplateView.as_view(template_name="office-interior.html" ), name="office_interior"),

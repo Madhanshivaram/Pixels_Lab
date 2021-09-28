@@ -10,7 +10,6 @@
 <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
 <link href="{% static 'css/style.css' %}" rel="stylesheet">
 <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
-
 <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 <link rel="icon" href="images/favicon.png" type="image/x-icon">
 
@@ -68,7 +67,7 @@
                             
                             <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
-                                    <li class="dropdown"><a href="{% url 'index_2' %}">Home</a>
+                                    <li class="dropdown"><a href="{% url 'index' %}">Home</a>
                                        <!-- <ul>
                                             <li><a href="{% url 'index' %}">Home page 01</a></li>
                                             <li><a href="{% url 'index_2' %}">Home page 02</a></li>
@@ -93,18 +92,18 @@
 											<li><a href="{% 'testimonials.html">Testimonials</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown"><a href="services-dark.html">Services</a>
+                                    <li class="dropdown"><a href="{% url 'services_dark' %}">Services</a>
                                         <ul>
-											<li><a href="services-dark.html">Services Layout 01</a></li>
-											<li><a href="services-light.html">Services Layout 02</a></li>
-                                            <li><a href="residental-interior.html">Residential Interior</a></li>
-                                            <li><a href="commercial-interior.html">Commercial Interior</a></li>
-                                            <li><a href="office-interior.html">Office Design</a></li>
-                                            <li><a href="hospitality-design.html">Hospitality Design</a></li>
-                                            <li><a href="modern-furniture.html">Modern Furniture</a></li>
-											<li><a href="modular-kitchen.html">Modular Kitchen</a></li>
-											<li><a href="wardrobe.html">Wardrobe</a></li>
-											<li><a href="false-celling-design.html">False Celling Design</a></li>
+											<li><a href="{% url 'services_dark' %}">Services Layout 01</a></li>
+											<li><a href="{% url 'services_light' %}">Services Layout 02</a></li>
+                                            <li><a href="{% url 'residental_interior' %}">Residential Interior</a></li>
+                                            <li><a href="{% url 'commercial_interior' %}">Commercial Interior</a></li>
+                                            <li><a href="{% url 'office_interior' %}">Office Design</a></li>
+                                            <li><a href="{% url 'hospitality_design' %}">Hospitality Design</a></li>
+                                            <li><a href="{% url 'modern_furniture' %}">Modern Furniture</a></li>
+											<li><a href="{% url 'modular_kitchen' %}">Modular Kitchen</a></li>
+											<li><a href="{% url 'wardrobe' %}">Wardrobe</a></li>
+											<li><a href="{% url 'false_celling_design' %}">False Celling Design</a></li>
                                         </ul>
                                     </li>
                                    <!--- <li class="dropdown"><a href="projects-classic.html">Projects</a>
@@ -198,12 +197,12 @@
                                     <div class="logo">
                                         <a href="index-2.html"><img src="{% static 'images/footer-logo.png' %}" alt="" /></a>
                                     </div>
-                                    <div class="text">Stella Orr'e is a WordPress theme to build Interior websites. It has good features and you will love.</div>
+                                    <div class="text">Pixels lab has been most trusted editor service in the market</div>
                                     <ul class="social-icons">
-                                        <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                                        <li><a href="https://www.facebook.com/Pixels-Lab-104624688631602"><span class="fab fa-facebook-f"></span></a></li>
+                                        <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
                                         <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                                        <li><a href="#"><span class="fab fa-google-plus-g"></span></a></li>
+                                        <li><a href="#"><span class="fab fa-instagram"></span></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -214,10 +213,10 @@
                                     <h2>Quick links</h2>
                                     <div class="widget-content">
                                         <ul class="list">
-                                            <li><a href="#">About Gaille</a></li>
+                                            <li><a href="#">About Pixels Lab</a></li>
                                             <li><a href="#">Privacy Policy</a></li>
                                             <li><a href="#">Terms & Conditionis</a></li>
-                                            <li><a href="#">Faq</a></li>
+                                            <li><a href="#">FAQ</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -231,21 +230,22 @@
                         <div class="row clearfix">
                         
                             <!--Footer Column-->
+
                             <div class="footer-column col-lg-5 col-md-6 col-sm-12">
                                 <div class="footer-widget contact-widget">
                                     <h2>Contact Info</h2>
                                     <div class="widget-content">
-                                        <a href="tel:1800-574-9687" class="contact-number">(1800) 574 9687</a>
+                                        <a href="tel:+91 78999 99578" class="contact-number">+91 78999 99578</a>
                                         <ul>
-                                            <li>256, Stella Orr'e, New York 24</li>
-                                            <li>Email :<a href="mailto:info@stellaorre.com"> info@stellaorre.com</a></li>
+                                            <li>Bangalore India</li>
+                                            <li>Email :<a href="mailto:info@pixelslab.in">info@pixelslab.in</a></li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                             
                             <!--Footer Column-->
-                            <div class="footer-column col-lg-7 col-md-6 col-sm-12">
+                           <div class="footer-column col-lg-7 col-md-6 col-sm-12">
                                 <div class="footer-widget newsletter-widget">
                                     <h2>Newsletter</h2>
                                     <div class="text">Get Special offers & Discounts</div>
@@ -270,10 +270,10 @@
             <!--Footer Bottom-->
             <div class="footer-bottom clearfix">
                 <div class="pull-left">
-                    <div class="copyright"><a href="templateshub.net">Templates Hub</a></div>
+                    <div class="copyright"><a href="templateshub.net">Copyright</a></div>
                 </div>
                 <div class="pull-right">
-                    <a href="templateshub.net">Templates Hub</a>
+                    <a href="templateshub.net">Terms & Conditions</a>
                 </div>
             </div>
             
